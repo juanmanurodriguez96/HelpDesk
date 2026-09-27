@@ -1,0 +1,27 @@
+{
+  "name": "helpdesk-agent-ecosystem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ecosistema de agentes de soporte tecnico (mesa de ayuda): triaje, diagnostico, auto-remediacion, escalamiento con SLA y bitacora auditable, construido sobre Node.js y la capa de personalizacion de agentes de opencode / VS Code / Cursor / Claude.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "test": "node --test --test-reporter=spec test/",
+    "validate": "node tools/validate-ecosystem.mjs",
+    "verify": "npm run validate && npm test",
+    "demo": "node src/cli.js demo",
+    "probe": "node tools/probe-endpoints.mjs",
+    "cli": "node src/cli.js"
+  },
+  "keywords": [
+    "helpdesk",
+    "agent",
+    "triage",
+    "sla",
+    "opencode",
+    "pii"
+  ],
+  "license": "MIT"
+}

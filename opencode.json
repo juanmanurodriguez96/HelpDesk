@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "helpdesk-orchestrator",
+  "instructions": ["AGENTS.md", ".opencode/instructions/estilo.md"],
+  "share": "disabled",
+  "autoupdate": "notify",
+  "subagent_depth": 3,
+  "permission": {
+    "external_directory": {
+      "*": "deny"
+    },
+    "webfetch": "deny",
+    "websearch": "deny",
+    "edit": "deny",
+    "task": {
+      "*": "allow"
+    },
+    "skill": {
+      "*": "allow"
+    }
+  },
+  "formatter": false
+}
